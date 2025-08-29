@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stly.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <ul class="nav-links">
+                <li><a href="/mine.html">Back Home</a></li>
+                <li><a href="/wisdom.html">Wisdom</a></li>
+                <li><a href="/Community_product.html">Community product/OTOP</a></li>
+                <li><a href="/marine_condervative.html">Marine condervative</a></li>
+          
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 style="font-size: 5rem;">วีถีชีวิต</h1>
+                <p>pass</p>
+            </div>
+        </section>
+
+        <div class="container">
+           <section id="services" class="section">
+                <h2>ชลบุรี</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3 style="font-size: 25px;">วิถีชีวิต</h3>
+                        <p></p>
+                    </div>    
+                </div>
+                <div class="card">
+                        <h3>PictureOne</h3>
+                        
+                </div>
+                
+            </section>
+
+            <section id="services" class="section">
+                <h2>จังหวัดจันทบุรี</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3 style="font-size: 25px;">วีถีชีวิต</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="section">
+                <h2>ปราจีนบุรี</h2>
+                 <div class="grid">
+                    <div class="card">
+                        <h3 style="font-size: 25px;">วีถีชีวิต</h3>
+                        <p> </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="section">
+                <h2>สระแก้ว</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3 style="font-size: 25px;">วีถีชีวิต</h3>
+                        <p></p>
+                    </div>
+                
+                </div>
+            </section>
+
+            <section id="services" class="section">
+                <h2>ฉะเชิงเทรา</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>วีถีชีวิต</h3>
+                        <p> </p>
+                 
+                </div>
+            </section>
+
+            <section id="services" class="section">
+                <h2>ระยอง</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>วีถีชีวิต</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="section">
+                <h2>ตราด</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>วีถีชีวิต</h3>
+                        <p>วิถีชีวิตของชาวตราดมีความเรียบง่ายและผูกพันกับธรรมชาติ ทั้งทะเลและป่าชายเลน โดยเฉพาะอย่างยิ่งในชุมชนริมทะเลและเกาะต่างๆ
+                            <br>ชุมชนบ้านน้ำเชี่ยว: เป็นชุมชนที่มีเอกลักษณ์โดดเด่นเนื่องจากมีผู้คนจาก 3 วัฒนธรรมและ 2 ศาสนาอาศัยอยู่ร่วมกันอย่างอบอุ่น 
+                            ทั้งชาวไทย ชาวไทยเชื้อสายจีน และชาวมุสลิมเชื้อสายเขมร <br>ชุมชนท่าระแนะ: มีวิถีชีวิตที่เชื่อมโยงกับป่าชายเลนที่อุดมสมบูรณ์ ชาวบ้านใช้ประโยชน์จากป่าในการหาอาหาร เช่น ปู ปลา และยังมีการจัดการท่องเที่ยวเชิงอนุรักษ์ </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Handle form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            alert(`Thank you, ${name}! Your message has been received. We'll get back to you at ${email}.`);
+
+            // Reset form
+            event.target.reset();
+        }
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.15)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.1)';
+            }
+        });
+    </script>
+</body>
+
+</html>
